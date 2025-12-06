@@ -28,34 +28,36 @@ function ServicesSection() {
   const renderServiceCard = services.map((service, idx) => (
     <Card key={idx}>
       <div
-        className={`rounded-full ${service.bgColor} text-white w-10 h-10 flex items-center justify-center mr-4`}
+        className={`rounded-full ${service.bgColor} text-white w-8 h-7 md:w-10 md:h-10 flex items-center justify-center mr-4`}
       >
         {service.icon}
       </div>
 
-      <div>
-        <h4 className="font-semibold">{service.title}</h4>
-        <span className="text-gray-500">{service.projects} Projects</span>
+      <div className="flex flex-col">
+        <h4 className="font-semibold text-[9px] md:text-[15px]">
+          {service.title}
+        </h4>
+        <span className="text-gray-500 text-[9px] md:text-[15px] ">
+          {service.projects} Projects
+        </span>
       </div>
     </Card>
   ));
 
   return (
-    <section className="mt-16 flex">
-      <div className="grid grid-cols-1 gap-4 mt-8">
-        {renderServiceCard}
-      </div>
+    <section className="mt-16 flex" id="ServicesSection">
+      <div className="space-y-4 mt-8">{renderServiceCard}</div>
 
-      <div className="flex flex-col ml-116 mt-8">
-        <div className="">
-          {" "}
-          <h3 className="text-4xl text-gray-600 font-bold">What do I help?</h3>
-          <p className="text-gray-600 mt-4 max-w-lg tracking-wide leading-8">
-            I will help you with finding a solution and solve <br /> your
-            problems. We use process design to create digital <br />{" "}
-            products.Beside that also help their business.
-          </p>
-        </div>
+      <div className="flex flex-col ml-12 md:ml-20 lg:ml-50 xl:ml-116 mt-8 transition-all duration-400">
+        {" "}
+        <h3 className="text-2xl md:text-4xl text-gray-600 font-bold">
+          What do I help?
+        </h3>
+        <p className="text-gray-600 mt-4 max-w-lg tracking-wide leading-8 text-sm">
+          I will help you with finding a solution and solve <br /> your
+          problems. We use process design to create digital <br />{" "}
+          products.Beside that also help their business.
+        </p>
       </div>
     </section>
   );

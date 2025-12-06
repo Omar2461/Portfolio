@@ -7,16 +7,15 @@ const myFont = localFont({
 
 function Header() {
   const headerItems = [
-    { title: "Services", link: "#" },
-    { title: "Works", link: "#" },
-    { title: "Notes", link: "#" },
-    { title: "Experience", link: "#" },
+    { title: "Services", link: "#ServicesSection" },
+    { title: "Experience", link: "#ExperiencesSection" },
+    { title: "Works", link: "#WorksSection" },
   ];
 
   const renderHeaderItems = () => {
     return headerItems.map(({ title, link }, idx) => (
       <Link
-        className="relative px-6 py-2 font-semibold rounded-full
+        className="relative px-1 mr-5 lg:px-6 lg:py-2 font-semibold rounded-full 
         hover:border-r hover:border-l hover:border-[#8bbab3] hover:text-[#8bbab3] hover:transition-all hover:duration-500 "
         key={idx}
         href={link}
@@ -27,12 +26,16 @@ function Header() {
   };
 
   return (
-    <header className="flex items-center justify-between px-3  ">
-      <h1 className={`text-3xl font-bold ${myFont.className} text-gray-600`}>Omar</h1>
-      <nav className="flex space-x-6 text-gray-600 font-medium">
+    <header className="flex items-center justify-between px-3" id="header">
+      <h1
+        className={`text-2xl lg:text-3xl font-bold ${myFont.className} text-gray-600 transition-all duration-400`}
+      >
+        Omar
+      </h1>
+      <nav className="flex lg:space-x-6 text-gray-600 font-medium">
         {renderHeaderItems()}
       </nav>
-      <div className="text-sm font-semibold text-gray-600">01142563801</div>
+      <div className="text-sm font-semibold text-gray-600 hidden md:block">01142563801</div>
     </header>
   );
 }

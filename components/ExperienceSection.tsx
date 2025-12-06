@@ -15,28 +15,30 @@ function ExperienceSection() {
 
   const renderExperience = Experiences.map((exp, idx) => {
     return (
-      <div className="flex" key={idx}>
-        <div className="ml-5">
-          <h4 className="font-semibold text-gray-600">
+      <div className="flex flex-col md:flex-row" key={idx}>
+        <div className="ml-5 md:w-96">
+          <h4 className="font-semibold text-gray-600 ">
             {exp.title} <br />
           </h4>
           <p className="text-gray-600 text-sm">{exp.duration}</p>
         </div>
 
-        <div className="flex flex-col items-center space-y-3 absolute ml-142">
+        <br/>
+
+        <div className="flex flex-col items-center space-y-3 absolute md:ml-60 lg:ml-83 xl:ml-102 2xl:ml-110 md:mt-1 mt-25 ml-5 transition-all duration-400">
 
           <div className="w-6 h-6 rounded-full border-2 border-gray-300 p-1">
             <div className="w-full h-full rounded-full bg-teal-600"></div>
           </div>
 
-          <div className="h-70 border-l-2 border-dashed border-gray-300"></div>
+          <div className="h-92 md:h-76 lg:h-68 xl:h-44 border-l-2 border-dashed border-gray-300"></div>
 
           <div className="w-6 h-6 rounded-full border-2 border-gray-300 p-1">
             <div className="w-full h-full rounded-full bg-orange-500"></div>
           </div>
         </div>
 
-        <div className="flex flex-col ml-50 -mt-2 mb-5 space-y-2 h-full">
+        <div className="flex flex-col ml-15 md:ml-20 -mt-2 mb-5 space-y-2 h-full transition-all duration-400">
           {exp.details.map((detail, idx) => {
             return (
               <p
@@ -53,7 +55,7 @@ function ExperienceSection() {
   });
 
   return (
-    <section className="rounded-xl shadow-xl ">
+    <section className="rounded-xl shadow-xl"  id="ExperiencesSection">
       <h3 className="text-3xl text-gray-600 font-bold mb-10 flex justify-center ">
         My Experience
       </h3>
