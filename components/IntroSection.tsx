@@ -15,7 +15,7 @@ function IntroSection() {
 
         <Link
           href="mailto:Omarhassan.mansour@gmail.com"
-          className="text-[8px] md:text-[10px] xl:text-[15px] mt-30 mb-50 text-orange-500 w-fit "
+          className="text-[6px] md:text-[10px] xl:text-[15px] mt-30 mb-50 text-orange-500 w-fit "
         >
           omarhassan.mansour@gmail.com
         </Link>
@@ -38,8 +38,8 @@ function IntroSection() {
         alt={"my-image"}
         loading="eager"
       />
-      <div className="top-10 left-62 absolute md:mb-80 md:ml-50 lg:ml-112 xl:ml-162 xl:mb-90 2xl:ml-120 md:w-fit transition-all duration-400">
-        <p className="text-gray-600 text-[11px] md:text-sm lg:text-md xl:text-lg text-sm ">
+      <div className="top-10 left-59 absolute md:mb-80 md:ml-50 lg:ml-112 xl:ml-162 xl:mb-90 2xl:ml-120 md:w-fit transition-all duration-400">
+        <p className="text-gray-600 text-[10px] md:text-sm lg:text-md xl:text-lg text-sm ">
           I design beautifully simple
           <br /> things, and I love what I do.
         </p>

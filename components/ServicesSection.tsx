@@ -50,10 +50,10 @@ function ServicesSection() {
 
       <div className="flex flex-col ml-12 md:ml-20 lg:ml-50 xl:ml-116 mt-8 transition-all duration-400">
         {" "}
-        <h3 className="text-2xl md:text-4xl text-gray-600 font-bold">
+        <h3 className="text-xl md:text-4xl text-gray-600 font-bold">
           What do I help?
         </h3>
-        <p className="text-gray-600 mt-4 max-w-lg tracking-wide leading-8 text-sm">
+        <p className="text-gray-600 mt-4 max-w-lg tracking-wide leading-8 text-[12px] md:text-sm">
           I will help you with finding a solution and solve <br /> your
           problems. We use process design to create digital <br />{" "}
           products.Beside that also help their business.

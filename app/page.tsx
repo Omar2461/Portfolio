@@ -5,9 +5,9 @@ import ServicesSection from "@/components/ServicesSection";
 
 export default function PortfolioPage() {
   return (
-    <div className="w-full xl:px-20 min-h-screen bg-[#f8f6ef] flex flex-col ">
+    <div className=" w-full xl:px-20 min-h-screen bg-[#f8f6ef] flex flex-col ">
       {/* LEFT SIDE */}
-      <div className="w-full px-2 md:px-16 py-12 space-y-12">
+      <div className="w-full px-2 md:px-16 py-6 md:py-12 space-y-12">
         <Header />
 
         {/* INTRO */}
