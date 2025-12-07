@@ -31,7 +31,7 @@ function ExperienceSection() {
             <div className="w-full h-full rounded-full bg-teal-600"></div>
           </div>
 
-          <div className="h-99 landscape:h-91 md:landscape:h-76 md:h-76 lg:landscape:h-68 lg:h-68 xl:h-44 border-l-2 border-dashed border-gray-300"></div>
+          <div className="h-99 landscape:h-91 md:landscape:h-76 md:h-76 lg:landscape:h-68 lg:h-68 xl:h-44 xl:landscape:h-44  border-l-2 border-dashed border-gray-300"></div>
 
           <div className="w-6 h-6 rounded-full border-2 border-gray-300 p-1">
             <div className="w-full h-full rounded-full bg-orange-500"></div>
