@@ -13,12 +13,12 @@ function IntroSection() {
           {`I'm Omar`}
         </h2>
 
-        <Link
+        <a
           href="mailto:Omarhassan.mansour@gmail.com"
           className="text-[6px] md:text-[10px] xl:text-[15px] mt-30 mb-50 text-orange-500 w-fit "
         >
           omarhassan.mansour@gmail.com
-        </Link>
+        </a>
 
         <div className=" md:absolute md:bottom-10 w-fit flex gap-2">
           <p className="text-4xl font-bold text-gray-600">2</p>

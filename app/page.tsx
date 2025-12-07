@@ -3,6 +3,11 @@ import Header from "@/components/header";
 import IntroSection from "@/components/IntroSection";
 import ServicesSection from "@/components/ServicesSection";
 
+export const metadata={
+  title: "Omar Hassan - Portfolio",
+  description: "Welcome to my portfolio website showcasing my projects and skills.",
+}
+
 export default function PortfolioPage() {
   return (
     <div className=" w-full xl:px-20 min-h-screen bg-[#f8f6ef] flex flex-col ">
